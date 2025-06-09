@@ -1,0 +1,70 @@
+/* Fondo principal de la navbar */
+.navbar {
+  background-color: #175060 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Marca  */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+/* Links del navbar */
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover en links */
+.nav-link:hover {
+  color: #ffe6e6 !important;
+  text-decoration: underline;
+}
+
+/* Botón del menú (hamburguesa) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Parte central encabezado */
+
+.search-box {
+  border-radius: 6px;
+}
+
+.cuadrobusqueda {
+  border-radius: 30px;
+}
+
+/* Encabezado iconos parte */
+.barra-contacto {
+  background-color: #175060 !important;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.iconos-redes a {
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.iconos-redes a:hover {
+  background-color: white;
+  color: #663399;
+}
