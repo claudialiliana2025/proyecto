@@ -68,3 +68,48 @@
   background-color: white;
   color: #663399;
 }
+
+/* categorias */
+
+.categoria-box {
+  background-color: #b4b8b8;
+  transition: transform 0.3s ease;
+}
+
+.categoria-box:hover {
+  transform: translateY(-5px);
+  background-color: #f8f8f8;
+}
+
+.categoria-box img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* marcas */
+.brand-logo {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+
+/* recuadro final de la pagina */
+
+.footer a:hover {
+  color: #175060;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.2rem;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #175060;
+}
