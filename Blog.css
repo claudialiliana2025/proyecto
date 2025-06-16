@@ -46,7 +46,7 @@ nav.menu li {
 
 nav.menu .active {
   background-color: #175060;
-}
+  }
 
 .articles {
   display: flex;
@@ -100,20 +100,104 @@ nav.menu .active {
     color: #175060;
     font-size: 30PX;
 }
-.pacifico-regular {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
   font-style: normal;
+font-size: 40PX;
+padding-top: 10px;
+color: #175060 ;
+}
+.TituloLM11{
+    color: #175060;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40PX;  
+    padding-left: 620PX;
+    background-color: #F0F0F0;
+    padding-left: 800px;
+    
+}
+.TituloLM1{
+    color: #175060;
+    font-weight: bold;
+    text-align: end ;
+    font-size: 37PX;  
+    padding-bottom: 30px; 
+}
+.TextoLM1{
+    text-align: justify;
+    padding-left: 100px;
+}
+
+.modal-header{
+    background-color: #F0F0F0;
+}
+
+.modal-footer img {
+
+  border-radius: 10px;
+}
+.i2{
+font-size: 30px;
+color: deeppink;
+font-weight: bold;
+text-align: center;
+}
+.SUB{
+    color: #175060;
+    text-align: center;
+    padding-left: 100PX;
+    font-weight: bold;
+}
+
+
+.Inicio a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  margin-left: 20px;
+  color: white;
+  
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+.c{
+padding-left: 24px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.footer a:hover {
   color: #175060;
-  font-size: 40PX;
+  text-decoration: underline;
 }
 
-.primer{
- 
-display: contents;    
+.footer i {
+  font-size: 1.2rem;
+}
 
+.footer {
+  margin-top: 100px;
+  background-color: #175060;
+  margin-bottom: 0px;
 }
 
 
+.TituloLM12{
+    color: #175060;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40PX;  
+    background-color: #F0F0F0;
+    padding-left: 400px;
 
-
+    
+}
