@@ -1,0 +1,189 @@
+/* Fondo principal de la navbar */
+.navbar {
+  background-color: #175060 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Marca  */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+/* Links del navbar */
+.nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover en links */
+.nav-link:hover {
+  color: #ffe6e6 !important;
+  text-decoration: underline;
+}
+
+/* Botón del menú (hamburguesa) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Parte central encabezado */
+
+.search-box {
+  border-radius: 10px;
+}
+
+.cuadrobusqueda {
+  border-radius: 30px;
+}
+
+/* Encabezado iconos parte */
+.barra-contacto {
+  background-color: #175060 !important;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.iconos-redes a {
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.iconos-redes a:hover {
+  background-color: white;
+  color: #663399;
+}
+
+/* categorias */
+
+.categoria-box {
+  background-color: #b4b8b8;
+  transition: transform 0.3s ease;
+}
+
+.categoria-box:hover {
+  transform: translateY(-5px);
+  background-color: #f8f8f8;
+}
+
+.categoria-box img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* marcas */
+.brand-logo {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+
+/* recuadro final de la pagina */
+
+.footer a:hover {
+  color: #175060;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.2rem;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #175060;
+}
+
+/* Estilo general del crear cuenta */
+.dropdown-menu {
+  border-radius: 12px;
+  padding: 15px;
+  min-width: 220px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-toggle {
+  background-color: #2a4b7a;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+
+.dropdown-toggle:hover {
+  background-color: #2a4b7a;
+}
+
+.btn-login:hover {
+  background-color: #2a4b7a;
+}
+
+.btn-register {
+  border: 1px solid #2a4b7a;
+  color: #2a4b7a;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.btn-register:hover {
+  background-color: #f3eaff;
+}
+
+.dropdown small {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* formulario de inicio de sesion  */
+
+.btn-facebook {
+  background-color: #1877f2;
+  color: white;
+}
+.btn-facebook:hover {
+  background-color: #145dbf;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.btn-purple {
+  background-color: #673ab7;
+  color: white;
+}
+.btn-purple:hover {
+  background-color: #5e35b1;
+}
+.btn-danger {
+  background-color: #175060;
+  color: white;
+  border: none;
+  padding: 10px 55px;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.price {
+  text-align: center;
+}
+.producto {
+  text-align: center;
+}

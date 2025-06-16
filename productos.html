@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sección de Productos - Pet Free</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/Proyecto/productos.css" />
+
+    <link
+      rel="website icon"
+      type="png"
+      href="/Proyecto/favicon_io (4)/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <!-- Encabezado navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #175060"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#"> 🐾 Pet free </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Parte central encabezado-->
+        <div class="formulario">
+          <div class="search-box">
+            <input
+              class="cuadrobusqueda"
+              type="text"
+              placeholder="Elige un producto"
+              style="width: 400px"
+            />
+            <button><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+
+        <!-- Encabezado iconos derecha-->
+        <div class="barra-contacto">
+          <span><strong>Llámamos</strong> 3153094815</span>
+          <div class="iconos-redes">
+            <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/login/"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarLaika">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="http://127.0.0.1:5501/Proyecto/proyecto.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5501/Proyecto/blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="carrito-container text-end me-4 mt-1">
+                <button
+                  class="btn position-relative"
+                  style="
+                    background-color: #2a4b7a;
+                    border-color: #175060;
+                    color: white;
+                  "
+                >
+                  🛒 Carrito
+                  <span
+                    id="contador-carrito"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección de Productos -->
+    <section class="productos py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <div class="row">
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto1.jpeg"
+                alt="Producto 1"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Alimento para Perros</h5>
+              <p class="price">$20.000</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto2.jpeg"
+                alt="Producto 2"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Juguete para Gatos</h5>
+              <p class="price">$15.000</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto3.jpeg"
+                alt="Producto 3"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Jaula para Mascotas</h5>
+              <p class="price">$50.000</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto4.jpeg"
+                alt="Producto 4"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Cama para Perros</h5>
+              <p class="price">$30.000</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto5.jpeg"
+                alt="Producto 5"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Shampoo para caballos</h5>
+              <p class="price">$60.000</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto6.jpeg"
+                alt="Producto 6"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Cedulas para animales</h5>
+              <p class="price">$57.850</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto7.jpeg"
+                alt="Producto 7"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Zapatos para perros</h5>
+              <p class="price">$28.000</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+            <div class="producto-box p-3 shadow rounded">
+              <img
+                src="/Proyecto/imagenes/productos/producto8.jpeg"
+                alt="Producto 8"
+                class="mb-2 img-fluid"
+              />
+              <h5 class="producto">Cerveza para perros</h5>
+              <p class="price">$2.500</p>
+              <button class="btn btn-danger comprar-btn">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer text-white pt-2 pb-1"
+      style="background-color: #175060"
+    >
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Pet Free
+            </h5>
+            <p>
+              Tienda de productos para tus mascotas. Ofrecemos lo mejor en
+              alimentos, juguetes y servicios veterinarios.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Enlaces
+            </h5>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Inicio</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Productos</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Servicios</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Contacto</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Contacto
+            </h5>
+            <p><i class="bi bi-house-door-fill me-2"></i> Bogotá, Colombia</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> info@petfree.com</p>
+            <p><i class="bi bi-phone-fill me-2"></i> +57 315 3094815</p>
+          </div>
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Síguenos
+            </h5>
+            <a href="#" class="text-white me-4"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center p-3 mt-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2025 Pet Free - Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let contador = 0;
+
+      // Selecciona el span del contador
+      const contadorElemento = document.getElementById("contador-carrito");
+
+      // Selecciona todos los botones de compra
+      const botonesComprar = document.querySelectorAll(".comprar-btn");
+
+      // Añade evento a cada botón
+      botonesComprar.forEach((boton) => {
+        boton.addEventListener("click", () => {
+          contador++;
+          contadorElemento.textContent = contador;
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Free Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Proyecto/blog.css" />
+
+    <link
+      rel="website icon"
+      type="png"
+      href="/Proyecto/favicon_io (4)/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-social">
+        <img
+          src="https://images.vexels.com/media/users/3/201898/isolated/preview/55be9a1a39abff39bc3596e8ddd224cd-trazo-de-huella-de-perro-azul.png"
+          style="width: 100px"
+          alt="LaikaTips Logo"
+          class="logo"
+        />
+        <p class="roboto">¡El hogar que ellos necesitan puede ser el tuyo!</p>
+        <div class="social">
+          <a href="https://www.facebook.com/login/"
+            ><img
+              src="https://images.icon-icons.com/2044/PNG/512/facebook_fb_logo_icon_124332.png"
+              style="width: 70px; height: 70px"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/"
+            ><img
+              src="https://images.icon-icons.com/2247/PNG/512/instagram_ig_logo_mint_icon_134942.png"
+              style="width: 65px; height: 65px"
+              alt="Instagram"
+            />
+          </a>
+          <a href="https://www.youtube.com/"
+            ><img
+              src="https://i.pinimg.com/564x/fb/c5/b4/fbc5b40af126f395d7e71a57b0179ed3.jpg"
+              style="width: 65px; height: 65px"
+              alt="YouTube"
+            />
+          </a>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <div class="caja d-flex justify-content-between">
+          <div class="Inicio d-flex gap-5 align-items-center">
+            <a href="http://127.0.0.1:5501/Proyecto/proyecto.html"
+              >Tienda en Línea</a
+            >
+          </div>
+
+          <ul>
+            <i
+              class="bi bi-bag-check-fill text-white d-flex gap-5 align-items-center"
+            ></i>
+            <li>Compras seguras online</li>
+            <i
+              class="bi bi-cash-coin text-white d-flex gap-5 align-items-center"
+            ></i>
+            <li>Pago contra entrega</li>
+            <i
+              class="bi bi-truck text-white d-flex gap-5 align-items-center"
+            ></i>
+            <li>Entregas el mismo día</li>
+            <i
+              class="bi bi-telephone-inbound-fill text-white d-flex gap-5 align-items-center"
+            ></i>
+            <li>Llámanos 3009108496</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="articles">
+      <article class="card">
+        <img
+          src="https://i.pinimg.com/736x/75/31/f8/7531f8463718b0b6ed1d28d3cb7264d7.jpg"
+          alt="Gato Blanco"
+        />
+        <div class="content">
+          <p class="category">ADOPTAR, GATOS Y/O PERROS</p>
+          <h2>Conoce las razones del por qué adoptar</h2>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#infoModal"
+          >
+            Leer más
+          </button>
+
+          <!-- Modal 1 -->
+          <div
+            class="modal fade"
+            id="infoModal"
+            tabindex="-1"
+            aria-labelledby="infoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <!-- Usa modal-lg o modal-fullscreen -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="TituloLM11" id="infoModalLabel">
+                    ADOPTA NO COMPRES
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="container mt-4">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4">
+                      <img
+                        src="https://i.pinimg.com/736x/05/1c/9f/051c9ff82513f57284d813c1f32bfc3b.jpg"
+                        style="border-radius: 20px"
+                        alt="Imagen"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-md-7">
+                      <h3 class="TituloLM1">
+                        ¿Por qué adoptar un perro o un gato?
+                      </h3>
+                      <p class="TextoLM1">
+                        Adoptar a un perro o gato implica tomar una gran
+                        decisión y responsabilidad. Debes tener en cuenta que el
+                        perro requiere tiempo, por lo tanto es importante que
+                        tengas claridad sobre la disponibilidad que tengas de
+                        este. Él no solo necesita compañía, sino actividad
+                        física diaria (La falta de ejercicio físico es una de
+                        las principales razones por las que los perros presentan
+                        problemas de conducta). De igual forma, requiere
+                        paciencia y compromiso en el proceso de educación, así
+                        como dinero mensual para cubrir los costos asociados a
+                        su alimentación, atención veterinaria, guardería (en
+                        época de vacaciones) y todos los cuidados que requiere
+                        durante un período de tiempo que puede ser de 15 años ó
+                        más. Adoptar un animal de compañía puede ser
+                        gratificante, pero solo si estas completamente seguro y
+                        convencido de todo lo que implicara para ti adoptar un
+                        compañero.
+                      </p>
+                      <p class="i1">Transforma sus vidas en</p>
+                      <p class="i2">AMOR</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://i.pinimg.com/736x/60/36/b5/6036b509e7f6785933b441adb095eda0.jpg"
+          alt="Gato Rayado"
+        />
+        <div class="content">
+          <p class="category">PERROS CRIOLLOS</p>
+          <h2>¿Qué es la mejor adoptar un perro criollo?</h2>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#infoModal1"
+          >
+            Leer más
+          </button>
+
+          <!-- Modal 2-->
+          <div
+            class="modal fade"
+            id="infoModal1"
+            tabindex="-1"
+            aria-labelledby="infoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <!-- Usa modal-lg o modal-fullscreen -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="TituloLM11" id="infoModalLabel">
+                    ELIGÉ TU CRIOLLO
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="container mt-4">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4">
+                      <img
+                        src="http://i.pinimg.com/736x/5f/e1/80/5fe180961d7f8968233d0e4c11ac24e3.jpg"
+                        style="border-radius: 20px; width: 350px"
+                        alt="Imagen"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-md-7">
+                      <h3 class="TituloLM1">
+                        ¡ Ventajas de adoptar un perro criollo!
+                      </h3>
+                      <p class="TextoLM1">
+                        Los perros criollos, también conocidos como mestizos o
+                        perros sin raza definida, tienen varias ventajas que los
+                        hacen una excelente opción para ser adoptados. Son
+                        generalmente más saludables, tienen una mayor esperanza
+                        de vida y son muy leales y cariñosos.
+                      </p>
+                      <p class="SUB">Salud y Resistencia:</p>
+                      <p class="TextoLM1">
+                        Menos predisposición a enfermedades hereditarias: Los
+                        perros criollos, al no pertenecer a una raza específica,
+                        tienen una mayor diversidad genética, lo que reduce la
+                        probabilidad de contraer enfermedades genéticas
+                        asociadas con razas puras.
+                      </p>
+                      <p class="SUB">Mayor resistencia:</p>
+                      <p class="TextoLM1">
+                        Su sistema inmunológico es más robusto, lo que les
+                        permite adaptarse mejor a diferentes condiciones
+                        climáticas y entornos.
+                      </p>
+                      <p class="SUB">Longevidad:</p>
+                      <p class="TextoLM1">
+                        La diversidad genética de los criollos se asocia con una
+                        mayor esperanza de vida, pudiendo vivir hasta 15 o 20
+                        años con los cuidados adecuados.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://i.pinimg.com/736x/a4/b4/5f/a4b45fde032f9fdc760d157f65235d94.jpg"
+          alt="Perros Blancos"
+        />
+        <div class="content">
+          <p class="category">CASO EXITOSO DE ADOPCION</p>
+          <h2>¿Cómo te ayuda con el estrés o la ansiedad tu mascota?</h2>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#infoModal2"
+          >
+            Leer más
+          </button>
+          <!-- Modal 2-->
+          <div
+            class="modal fade"
+            id="infoModal2"
+            tabindex="-1"
+            aria-labelledby="infoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <!-- Usa modal-lg o modal-fullscreen -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="TituloLM12" id="infoModalLabel">
+                    Un cachorro renueva la vida de una niña con problemas
+                    médicos
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="container mt-4">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4">
+                      <img
+                        src="https://i.pinimg.com/736x/31/f9/66/31f9660b4f6bc7e1a2ab435cb1ebb3d8.jpg"
+                        style="border-radius: 20px; width: 350px"
+                        alt="Imagen"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-md-7">
+                      <h3 class="TituloLM1 text-center">
+                        ¡Caso exitoso de adopción...!
+                      </h3>
+                      <p class="TextoLM1">
+                        En febrero de 2024, Job y Sarah descubrieron que su hija
+                        menor, Lindley, tenía un trastorno congénito en el pie
+                        que les cambió la vida. Tras siete meses de cirugías y
+                        rehabilitación, Lindley ya no se sentía como la niña
+                        activa que adoraba el fútbol. En ese momento apareció
+                        Riley, un cachorro de Best Friends en el noroeste de
+                        Arkansas. En pocos días, la familia notó un cambio
+                        positivo: Lindley estaba emocionada por regresar a la
+                        escuela, volver al campo de fútbol y, sobre todo, cuidar
+                        a Riley. La familia siempre estará agradecida por el día
+                        en que Riley llegó a sus vidas y devolvió la alegría a
+                        su hija.
+                      </p>
+
+                      <p class="TextoLM1">
+                        Adoptar una mascota no solo brinda un hogar amoroso a un
+                        animal necesitado, sino que también puede tener un
+                        impacto positivo en la salud física y mental de la
+                        persona adoptante. La interacción con mascotas reduce el
+                        estrés, la ansiedad y la soledad, además de fomentar la
+                        actividad física y la socialización.
+                      </p>
+
+                      <p class="i1">Transforma sus vidas en</p>
+                      <p class="i2">AMOR</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <div class="cajafinal">
+      <footer class="footer text-white pt-2 pb-1">
+        <div class="container text-center text-md-start">
+          <div class="row text-center text-md-start">
+            <!-- Logo y descripción -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+                Pet Free
+              </h5>
+              <p>
+                Tienda de productos para tus mascotas. Ofrecemos lo mejor en
+                alimentos, juguetes y servicios veterinarios.
+              </p>
+            </div>
+
+            <!-- Enlaces útiles -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+                Enlaces
+              </h5>
+              <p>
+                <a href="#" class="text-white text-decoration-none">Inicio</a>
+              </p>
+              <p>
+                <a href="#" class="text-white text-decoration-none"
+                  >Productos</a
+                >
+              </p>
+              <p>
+                <a href="#" class="text-white text-decoration-none"
+                  >Servicios</a
+                >
+              </p>
+              <p>
+                <a href="#" class="text-white text-decoration-none">Contacto</a>
+              </p>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+                Contacto
+              </h5>
+              <p><i class="bi bi-house-door-fill me-2"></i> Bogotá, Colombia</p>
+              <p><i class="bi bi-envelope-fill me-2"></i> info@petfree.com</p>
+              <p><i class="bi bi-phone-fill me-2"></i> +57 315 3094815</p>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+                Síguenos
+              </h5>
+              <a href="#" class="text-white me-4"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-4"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

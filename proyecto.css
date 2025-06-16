@@ -1,3 +1,8 @@
+/* Fondo principal de la pagina*/
+body {
+  background-color: white; /* Cambia este código por el color que desees */
+}
+
 /* Fondo principal de la navbar */
 .navbar {
   background-color: #175060 !important;
@@ -14,7 +19,7 @@
 /* Links del navbar */
 .nav-link {
   color: #fff !important;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
@@ -69,33 +74,107 @@
   color: #663399;
 }
 
+/* carousel */
+.carousel-inner {
+  padding-top: 20px;
+}
+
 /* categorias */
 
-.categoria-box {
-  background-color: #b4b8b8;
+.tarjeta a {
+  text-decoration: none;
+}
+
+.carrusel-categorias {
+  padding: 1rem 2rem;
+}
+
+.carrusel-categorias h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contenedor-carrusel {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tarjeta {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease;
 }
 
-.categoria-box:hover {
-  transform: translateY(-5px);
-  background-color: #f8f8f8;
+.tarjeta:hover {
+  transform: scale(1.05);
 }
 
-.categoria-box img {
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
+.tarjeta img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.tarjeta p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
 }
 
 /* marcas */
-.brand-logo {
-  filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; /* Para adaptar en pantallas pequeñas */
 }
 
-.brand-logo:hover {
-  filter: none;
-  transform: scale(1.05);
+.marcas {
+  flex: 1;
+  min-width: 300px;
+  margin-left: -200px;
+}
+
+.mapa {
+  flex: 1;
+  min-width: 100px;
+  margin-right: -150px;
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+  }
+
+  .mapa {
+    text-align: right;
+    flex: 0.8;
+    min-width: 280px;
+  }
+}
+
+.mapa h4 {
+  padding-left: 100px;
+}
+
+.secciontitulo {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+  color: #222;
 }
 
 /* recuadro final de la pagina */
@@ -112,4 +191,346 @@
 .footer {
   margin-top: 100px;
   background-color: #175060;
+}
+
+/* Estilo general del crear cuenta */
+.dropdown-menu {
+  border-radius: 12px;
+  padding: 15px;
+  min-width: 220px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-toggle {
+  background-color: #2a4b7a;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+
+.dropdown-toggle:hover {
+  background-color: #2a4b7a;
+}
+
+.btn-login {
+  background-color: #2a4b7a;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-login:hover {
+  background-color: #2a4b7a;
+}
+
+.btn-register {
+  border: 1px solid #2a4b7a;
+  color: #2a4b7a;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.btn-register:hover {
+  background-color: #f3eaff;
+}
+
+.dropdown small {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* formulario de inicio de sesion  */
+
+.btn-facebook {
+  background-color: #1877f2;
+  color: white;
+}
+.btn-facebook:hover {
+  background-color: #145dbf;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.btn-purple {
+  background-color: #673ab7;
+  color: white;
+}
+.btn-purple:hover {
+  background-color: #5e35b1;
+}
+
+/* formulario de cuenta nueva  */
+.text-purple {
+  color: #6c3fa9;
+}
+
+.btn-purple {
+  background-color: #6c3fa9;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #572f91;
+}
+
+.btn-facebook {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+}
+
+.btn-facebook:hover {
+  background-color: #0f5bcf;
+}
+
+.modal-content {
+  border-radius: 1rem;
+}
+
+/* aplicacion movil  */
+.app-banner {
+  background: linear-gradient(135deg, #175060, #b8b7ba);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+.app-banner .text-content h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.app-buttons .store-btn {
+  height: 50px;
+  margin-right: 20px;
+  transition: transform 0.2s;
+}
+
+.app-buttons .store-btn:hover {
+  transform: scale(1.05);
+}
+
+.phone-image img {
+  max-width: 250px;
+}
+
+.app-banner {
+  background: linear-gradient(135deg, #326570, #9eb1b8); /* tu degradado */
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  color: white;
+
+  /* Este es el truco: limitar ancho y centrar */
+  max-width: 1700px;
+  margin: 2rem auto; /* centrado horizontal + separación vertical */
+}
+
+/* Envios y terminos  */
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 30%;
+  min-width: 200px;
+}
+
+.benefit-item img {
+  width: 100px;
+  height: auto;
+  margin-top: 0.2rem;
+}
+
+.benefit-item strong {
+  display: block;
+  color: #000;
+}
+
+.benefit-item a {
+  color: #3daa37;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.benefit-item .promo {
+  color: #f58220;
+  font-weight: 500;
+}
+
+/* boton flotante whatssap  */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el mouse */
+.whatsapp-float:hover img {
+  transform: scale(1.1);
+}
+
+/* (Opcional) Pulso animado */
+.whatsapp-float::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  border: 2px solid rgba(37, 211, 102, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* carusel de marcas */
+
+h2 {
+  padding: 20px;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.pelicula {
+  position: relative;
+  flex: 0 0 auto;
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pelicula img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: white;
+  display: block;
+  border-radius: 10px;
+}
+
+.pelicula::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+}
+
+.pelicula:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animacion */
+.huellas-fondo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.huellas-fondo span {
+  position: absolute;
+  font-size: 2rem; /* Tamaño del emoji */
+  animation: flotar 25s linear infinite;
+  bottom: -150px;
+  opacity: 0.7;
+}
+
+/* Variaciones de posición, tamaño y velocidad */
+.huellas-fondo span:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.huellas-fondo span:nth-child(2) {
+  left: 40%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+}
+
+.huellas-fondo span:nth-child(3) {
+  left: 60%;
+  font-size: 1.5rem;
+  animation-delay: 10s;
+}
+
+.huellas-fondo span:nth-child(4) {
+  left: 80%;
+  font-size: 2.5rem;
+  animation-delay: 15s;
+}
+
+.huellas-fondo span:nth-child(5) {
+  left: 50%;
+  font-size: 1.2rem;
+  animation-delay: 20s;
+}
+
+/* Animación flotante */
+@keyframes flotar {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(360deg);
+    opacity: 0;
+  }
 }

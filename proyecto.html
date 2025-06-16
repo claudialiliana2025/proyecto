@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Pet Free</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,18 +14,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="/Proyecto/proyecto.css" />
+
+    <link
+      rel="website icon"
+      type="png"
+      href="/Proyecto/favicon_io (4)/favicon-32x32.png"
+    />
   </head>
 
   <body>
     <!-- Encabezado navbar-->
 
     <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #ff4d4d"
+      class="navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #175060"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#"> 🐾 Pet free </a>
+        <a class="navbar-brand fw-bold" href=""> 🐾Pet free </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,10 +65,48 @@
         <div class="barra-contacto">
           <span><strong>Llámamos</strong> 3153094815</span>
           <div class="iconos-redes">
-            <a href="#"><i class="bi bi-youtube"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/login/"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="bi bi-instagram"></i
+            ></a>
           </div>
+        </div>
+
+        <!-- Estilo general lista desplegable de crear cuenta -->
+
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Crear cuenta
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button
+                class="btn btn-login"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Iniciar sesión
+              </button>
+            </li>
+            <li>
+              <small>¿Eres nuevo cliente?</small>
+              <button
+                class="btn btn-register"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal"
+              >
+                Crear cuenta
+              </button>
+            </li>
+          </ul>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarLaika">
@@ -67,20 +115,209 @@
               <a class="nav-link active" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5501/Proyecto/productos.html"
+                >Productos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5501/Proyecto/blog.html"
+                >Blog</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <div class="carrito-container text-end me-4 mt-1">
+                <button
+                  class="btn position-relative"
+                  style="
+                    background-color: #2a4b7a;
+                    border-color: #175060;
+                    color: white;
+                  "
+                >
+                  🛒 Carrito
+                  <span
+                    id="contador-carrito"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </button>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Boton para abrir modal de inicio de sesion  -->
 
-    <!-- carousel de imagenes -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title w-100 text-center">¡Bienvenido de nuevo!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Correo"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  placeholder="Contraseña"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-end">
+                <a href="#" class="text-decoration-none text-purple"
+                  >¿Olvidó su contraseña?</a
+                >
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-purple btn-lg">
+                  Iniciar Sesión
+                </button>
+                <button
+                  class="btn btn-register"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                >
+                  ¿Cliente nuevo? Regístrate aquí
+                </button>
+              </div>
+              <div class="text-center mt-4">
+                <a
+                  href="https://www.facebook.com/login/"
+                  class="btn btn-facebook btn-lg w-100"
+                  role="button"
+                >
+                  <i class="bi bi-facebook me-2"></i> Continuar con Facebook
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boton para abrir modal de cuenta nueva   -->
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4 rounded-4 shadow">
+          <div class="modal-header border-0">
+            <h5 class="modal-title w-100 text-center fw-bold">¡Regístrate!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Nombre completo"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Correo"
+                />
+              </div>
+              <div class="mb-3 position-relative">
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  placeholder="Contraseña"
+                />
+                <span
+                  class="position-absolute end-0 top-50 translate-middle-y pe-3 text-muted"
+                  style="cursor: pointer"
+                >
+                  <i class="bi bi-eye"></i>
+                </span>
+              </div>
+
+              <p class="fw-semibold text-purple mb-2">¿Tienes mascota?</p>
+              <div class="mb-3 d-flex gap-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="perro" />
+                  <label class="form-check-label" for="perro">Perro</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gato" />
+                  <label class="form-check-label" for="gato">Gato</label>
+                </div>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="terminos" />
+                <label class="form-check-label small" for="terminos">
+                  Acepto
+                  <a
+                    href="#"
+                    class="text-decoration-none text-primary fw-semibold"
+                    >términos y condiciones</a
+                  >
+                  y autorizo tratamiento de datos y políticas.
+                </label>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button
+                  type="submit"
+                  class="btn btn-purple btn-lg fw-bold text-white"
+                >
+                  Crear cuenta
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  ¿Ya tienes cuenta? Inicia sesión
+                </button>
+              </div>
+
+              <div class="text-center mt-4">
+                <a
+                  href="https://www.facebook.com/login/
+                "
+                  class="btn btn-facebook btn-lg w-100"
+                  role="button"
+                >
+                  <i class="bi bi-facebook me-2"></i> Continuar con Facebook
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
       id="carouselExampleAutoplaying"
       class="carousel slide"
@@ -105,7 +342,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="/Proyecto/imagenes/Captura de pantalla 2025-06-08 202633.jpg"
+            src="/Proyecto/imagenes/bnr-royal-canin-1920x300-jun-10-hasta-min.jpg"
             class="d-block w-100 H-50"
             style="height: 350px; object-fit: cover"
             alt="..."
@@ -133,127 +370,218 @@
     </div>
 
     <!-- Categorias -->
-    <section class="categorias py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Categorías</h2>
-        <div class="row text-center">
-          <div class="col-md-3 mb-4">
-            <div class="categoria-box p-3 shadow rounded">
-              <img
-                src="/Proyecto/imagenes/depositphotos_790982354-stock-photo-dry-pet-food-feeding-bowl.jpg"
-                alt="Comida"
-                class="mb-2 img-fluid"
-              />
-              <h5>Alimentos</h5>
-            </div>
-          </div>
 
-          <div class="col-md-3 mb-4">
-            <div class="categoria-box p-3 shadow rounded">
-              <img
-                src="/Proyecto/imagenes/categoria_higiene.png"
-                alt="Cuidado e higiene"
-                class="mb-2 img-fluid"
-              />
-              <h5>Cuidado e higiene</h5>
-            </div>
-          </div>
+    <section class="carrusel-categorias">
+      <h2>Categoría: Mascotas</h2>
+      <div class="contenedor-carrusel">
+        <div class="tarjeta">
+          <a href="http://127.0.0.1:5501/Proyecto/productos.html">
+            <img
+              src="/Proyecto/imagenes/depositphotos_790982354-stock-photo-dry-pet-food-feeding-bowl.jpg"
+              alt="comida"
+            />
+            <p>Alimentos</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="http://127.0.0.1:5501/Proyecto/productos.html" class="">
+            <img src="/Proyecto/imagenes/categoria_higiene.png" alt="higiene" />
+            <p>Cuidado e higiene</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="http://127.0.0.1:5501/Proyecto/productos.html">
+            <img
+              src="/Proyecto/imagenes/depositphotos_240799852-stock-photo-pet-accessories-concept-pet-leashes.jpg"
+              alt="Entre paredes"
+            />
+            <p>Accesorios</p>
+          </a>
+        </div>
+        <div class="tarjeta">
+          <a href="http://127.0.0.1:5501/Proyecto/productos.html" class="">
+            <img
+              src="/Proyecto/imagenes/categoria_snacks-min.png"
+              alt="Doctor Odyssey"
+            />
+            <p>Snacks</p>
+          </a>
+        </div>
 
-          <div class="col-md-3 mb-4">
-            <div class="categoria-box p-3 shadow rounded">
-              <img
-                src="/Proyecto/imagenes/depositphotos_240799852-stock-photo-pet-accessories-concept-pet-leashes.jpg"
-                alt="Accesorios"
-                class="mb-2 img-fluid"
-              />
-              <h5>Accesorios</h5>
-            </div>
-          </div>
+        <div class="tarjeta">
+          <a href="http://127.0.0.1:5501/Proyecto/productos.html">
+            <img
+              src="/Proyecto/imagenes/7454_154805_Esencias_Gabrica___Esencias_Florales_De_Agresividad__Perros_1651073159_500x500.png"
+              alt="High Potential"
+            />
+            <p>Salud</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-md-3 mb-4">
-            <div class="categoria-box p-3 shadow rounded">
-              <img
-                src="/Proyecto/imagenes/7454_154805_Esencias_Gabrica___Esencias_Florales_De_Agresividad__Perros_1651073159_500x500.png"
-                alt="Salud"
-                class="mb-2 img-fluid"
-              />
-              <h5>Salud</h5>
-            </div>
+    <!-- Aplicacion movil -->
+
+    <section class="app-banner">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="text-content">
+          <h2>
+            Para una mejor <strong>experiencia</strong><br />
+            para ti y tu <strong>peludo descarga la app.</strong>
+          </h2>
+          <div class="app-buttons mt-4">
+            <a href="#"
+              ><img
+                src="/Proyecto/imagenes/APP.png"
+                alt="App Store"
+                class="store-btn"
+            /></a>
+            <a href="#"
+              ><img
+                src="/Proyecto/imagenes/GOOGLEP.png"
+                alt="Google Play"
+                class="store-btn"
+            /></a>
+            <a href="#"
+              ><img
+                src="/Proyecto/imagenes/huaweiGallery.png"
+                alt="AppGallery"
+                class="store-btn"
+            /></a>
           </div>
+        </div>
+        <div class="phone-image">
+          <img
+            src="/Proyecto/imagenes/8757acfb-f655-4788-a0ac-079093519879.png"
+            alt="App cell"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Envios y terminos -->
+
+    <section class="benefits">
+      <div class="benefit-item">
+        <img
+          src="/Proyecto/imagenes/shipping-truck-icon-vector.jpg"
+          alt="Envío gratis"
+        />
+        <div>
+          <strong>Domicilio Gratis** Bogotá y Sabana</strong><br />
+          Por compras iguales o superiores a $300.000<br />
+          <a href="#">Ver más detalles</a>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <img
+          src="/Proyecto/imagenes/símbolo-de-seguimiento-paquetes-icono-envío-caja-entrega-manual-señalización-diseño-silueta-para-aplicaciones-y-sitios-web-255351276.jpg"
+          alt="Envíos nacionales"
+        />
+        <div>
+          <strong>Envíos a todo Colombia*</strong><br />
+          Enviamos a los principales destinos del país<br />
+          <a href="#">Ver más detalles</a>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <img src="/Proyecto/imagenes/compras.png" alt="Confianza" />
+        <div>
+          <strong>Compras seguras y confiables</strong><br />
+          Asegurando la compra de tu mascota
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <img src="/Proyecto/imagenes/terminos.png" alt="Términos" />
+        <div>
+          <strong>Términos y condiciones</strong><br />
+          <span class="promo">de promociones vigentes</span>
         </div>
       </div>
     </section>
 
     <!-- Marcas -->
 
-    <section class="marcas py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Nuestras Marcas</h2>
-        <div class="row justify-content-center text-center align-items-center">
-          <div class="col-6 col-sm-4 col-md-2 mb-4">
-            <img
-              src="/Proyecto/imagenes/hills_circulo5.png"
-              alt="Marca 1"
-              class="img-fluid brand-logo"
-            />
+    <div class="flex-section container my-5">
+      <div class="contenido">
+        <div class="marcas">
+          <h2 class="secciontitulo">Nuestras marcas</h2>
+          <div class="carrusel">
+            <div class="pelicula">
+              <span class="numero"></span
+              ><img
+                src="/Proyecto/imagenes/proplan_circulo1.jpg"
+                alt="Poster 1"
+              />
+            </div>
+            <div class="pelicula">
+              <span class="numero"></span
+              ><img src="/Proyecto/imagenes/descarga.png" alt="Poster 2" />
+            </div>
+            <div class="pelicula">
+              <span class="numero"></span
+              ><img
+                src="/Proyecto/imagenes/hills_circulo5.png"
+                alt="Poster 3"
+              />
+            </div>
+            <div class="pelicula">
+              <span class="numero"></span
+              ><img
+                src="/Proyecto/imagenes/BR_FOR_DOG_CIRCULO.jpg"
+                alt="Poster 4"
+              />
+            </div>
           </div>
+        </div>
 
-          <div class="col-6 col-sm-4 col-md-2 mb-4">
-            <img
-              src="/Proyecto/imagenes/proplan_circulo1.jpg"
-              alt="Marca 2"
-              class="img-fluid brand-logo"
-            />
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4">
-            <img
-              src="/Proyecto/imagenes/descarga.png"
-              alt="Marca 3"
-              class="img-fluid brand-logo"
-            />
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4">
-            <img
-              src="/Proyecto/imagenes/descarga.jpg"
-              alt="Marca 4"
-              class="img-fluid brand-logo"
-            />
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2 mb-4">
-            <img
-              src="/Proyecto/imagenes/BR_FOR_DOG_CIRCULO.jpg"
-              alt="Marca 5"
-              class="img-fluid brand-logo"
-            />
+        <!-- Ubicacion -->
+        <div class="mapa">
+          <h4 class="mb-3 secciontitulo">Ubicación</h4>
+          <div class="mx-auto" style="max-width: 600px">
+            <!-- Tamaño máximo reducido -->
+            <div class="ratio" style="--bs-aspect-ratio: 56.25%">
+              <!-- Proporción 16:9 -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0138493287623!2d-74.0482392265061!3d4.767560941077405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85ece9329125%3A0x752d3d0ede5ba2d8!2sConjunto%20Residencial%20Mirandela%204!5e0!3m2!1ses!2sco!4v1749593284425!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Ubicacion -->
-    <div class="container my-4">
-      <h4 class="mb-3">Ubicación</h4>
-      <div class="mx-auto" style="max-width: 600px">
-        <!-- Tamaño máximo reducido -->
-        <div class="ratio" style="--bs-aspect-ratio: 56.25%">
-          <!-- Proporción 16:9 -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0138493287623!2d-74.0482392265061!3d4.767560941077405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85ece9329125%3A0x752d3d0ede5ba2d8!2sConjunto%20Residencial%20Mirandela%204!5e0!3m2!1ses!2sco!4v1749593284425!5m2!1ses!2sco"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
+    <!-- Botón flotante de WhatsApp -->
+    <a
+      href="https://wa.me/573153094815"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat en WhatsApp"
+    >
+      <img src="/Proyecto/imagenes/whatssap icon.jpg" alt="WhatsApp" />
+    </a>
+
+    <!-- Animacion  -->
+
+    <div class="huellas-fondo">
+      <span>🐾</span>🐾<span>🐾</span>🐾<span>🐾</span>🐾<span>🐾</span>🐾<span
+        >🐾</span
+      >
     </div>
 
     <!-- recuadro final de la pagina  -->

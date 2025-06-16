@@ -1,0 +1,197 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 4px solid #175060;
+}
+
+.logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  padding-top: 0px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.social img {
+  width: 24px;
+  margin-left: 15px;
+}
+
+nav.menu {
+  background-color: #175060;
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu li {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav.menu .active {
+  background-color: #175060;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card .category {
+  color: #175060;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+}
+
+.card button {
+  background-color: #175060;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Titulo {
+  font-family: "Fredoka One", cursive;
+  color: #175060;
+  font-size: 30px;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 40px;
+  padding-top: 10px;
+  color: #175060;
+}
+.TituloLM11 {
+  color: #175060;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding-left: 620px;
+  background-color: #f0f0f0;
+  padding-left: 800px;
+}
+.TituloLM1 {
+  color: #175060;
+  font-weight: bold;
+  text-align: end;
+  font-size: 37px;
+  padding-bottom: 30px;
+}
+.TextoLM1 {
+  text-align: justify;
+  padding-left: 100px;
+}
+
+.modal-header {
+  background-color: #f0f0f0;
+}
+
+.modal-footer img {
+  border-radius: 10px;
+}
+.i2 {
+  font-size: 30px;
+  color: deeppink;
+  font-weight: bold;
+  text-align: center;
+}
+.SUB {
+  color: #175060;
+  text-align: center;
+  padding-left: 100px;
+  font-weight: bold;
+}
+
+.Inicio a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  margin-left: 20px;
+  color: white;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+.c {
+  padding-left: 24px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.footer a:hover {
+  color: #175060;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.2rem;
+  color: white !important;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #175060;
+  margin-bottom: 0px;
+}
+
+.TituloLM12 {
+  color: #175060;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  background-color: #f0f0f0;
+  padding-left: 400px;
+}
